@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="../styles/appointments.css" />
+  </head>
+  <body>
+    <button id="back" onclick="goBack()">← Geri</button>
+    <h2 id="header"></h2>
+    <button id="newButton" onclick="createAppointment()"></button>
+    <div class="appointments">
+      <table class="appointment_table">
+        <thead>
+          <th id="tableState"></th>
+          <th id="tableDate"></th>
+          <th id="tableTime"></th>
+          <th id="tableOperation"></th>
+          <th id="tableSettings"></th>
+        </thead>
+        <tbody id="appointment_list"></tbody>
+      </table>
+    </div>
+    <div id="search"></div>
+    <div id="delete-approval">
+      <div id="delete-approval-box">
+        <span
+          style="font-family: Verdana, sans-serif"
+          id="deleteAppointmentMsg"
+        ></span>
+        <div>
+          <button id="delete-approve" onclick="acceptDeletion()"></button>
+          <button id="delete-reject" onclick="rejectDeletion()"></button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

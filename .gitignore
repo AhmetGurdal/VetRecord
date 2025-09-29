@@ -1,0 +1,8 @@
+notes/
+backup/
+config/
+dist/
+clean/
+node_modules/
+*.rar
+*.zip

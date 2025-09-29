@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="../styles/day.css" />
+  </head>
+  <body>
+    <button onclick="goBack()" id="backBtn"></button>
+    <h2 id="header">Gün Detay</h2>
+    <button onclick="createAppointment()" id="createBtn"></button>
+    <label class="switch">
+      <input id="checkbox" type="checkbox" />
+      <span class="slider round"></span>
+    </label>
+    <div class="appointments">
+      <table class="appointment-table">
+        <thead>
+          <th id="tableState"></th>
+          <th id="tableTime"></th>
+          <th id="tableAnimal"></th>
+          <th id="tableType"></th>
+          <th id="tableBreed"></th>
+          <th id="tableSex"></th>
+          <th id="tableOwner"></th>
+          <th id="tableOperation"></th>
+          <th id="tableProfiles"></th>
+        </thead>
+        <tbody id="appointment-body"></tbody>
+      </table>
+    </div>
+    <div id="delete-approval">
+      <div id="delete-approval-box">
+        <span
+          style="font-family: Verdana, sans-serif"
+          id="deleteMessage"
+        ></span>
+        <div>
+          <button id="delete-approve" onclick="acceptDeletion()"></button>
+          <button id="delete-reject" onclick="rejectDeletion()"></button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

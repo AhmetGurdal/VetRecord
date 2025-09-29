@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="../styles/settings.css" />
+  </head>
+  <body>
+    <button onclick="goBack()" id="backBtn"></button>
+    <h2 id="header"></h2>
+    <div id="loader" style="display: none">Loading...</div>
+
+    <div class="form">
+      <table>
+        <tbody>
+          <tr>
+            <td>${owner}</td>
+            <td id="owner">→ Sahip Adı Soyadı</td>
+          </tr>
+          <tr>
+            <td>${date}</td>
+            <td id="date">→ Tarih</td>
+          </tr>
+          <tr>
+            <td>${time}</td>
+            <td id="time">→ (varsa) Zaman</td>
+          </tr>
+          <tr>
+            <td>${treatment}</td>
+            <td id="treatment">→ İşlem</td>
+          </tr>
+          <tr>
+            <td>${animal}</td>
+            <td id="animal">→ Hayvan Adı</td>
+          </tr>
+          <tr>
+            <td>${company}</td>
+            <td id="company">→ Şirket Adı</td>
+          </tr>
+        </tbody>
+      </table>
+      <textarea id="wpMessageBox" wrap="off"></textarea>
+      <input id="companyNameBox" />
+      <select id="languageSelect"></select>
+      <!-- <img id="previewLogo" /> -->
+      <!-- <input type="file" id="file-upload" accept="image/png, image/jpeg" />
+      <label for="file-upload" class="upload-btn">📂 New Logo</label> -->
+      <button onclick="updateSettings()" id="saveBtn"></button>
+    </div>
+    <div
+      id="messageBox"
+      style="
+        display: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+      "
+    ></div>
+    <script src="index.js"></script>
+  </body>
+</html>

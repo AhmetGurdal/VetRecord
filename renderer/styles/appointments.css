@@ -1,0 +1,110 @@
+h2 {
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+    1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+body {
+  background-color: rgb(135, 135, 136);
+}
+
+input {
+  height: 2rem;
+  width: 8rem;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search {
+  margin-top: 1rem;
+}
+
+#back,
+#newButton {
+  width: 10rem;
+  height: 3rem;
+  font-size: 16px;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.appointment_table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+  font-family: Verdana, sans-serif;
+}
+
+.inputs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+th {
+  border: 1px solid #333;
+  padding: 8px;
+  position: sticky;
+  top: -1px;
+  background: #5e5e5e;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #cfcfcf;
+}
+
+.appointments {
+  margin-top: 1rem;
+  max-height: calc(100vh - 13rem);
+  height: 30rem;
+  overflow-y: auto;
+}
+
+#delete-approval {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background: #0000009a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#delete-approval-box {
+  background: rgb(66, 66, 66);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 6rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 4px;
+}
+
+#delete-approve,
+#delete-reject {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 6px;
+  border: 1px solid black;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <button onclick="openCustomerAdd()" id="addOwnerBtn"></button>
+      <button onclick="openAnimalAdd()" id="addAnimalBtn"></button>
+      <button onclick="openSearch()" id="searchBtn"></button>
+      <button onclick="openCalendar()" id="calendarBtn"></button>
+      <button onclick="openSettings()" id="settingsBtn"></button>
+      <img id="logo"/>
+    </div>
+    <div class="content">
+      <h1 id="todaysAppointmentHeader"></h1>
+      <div class="appointments">
+        <table>
+          <thead>
+            <th id="tableState1"></th>
+            <th id="tableTime1"></th>
+            <th id="tableOwnerName1"></th>
+            <th id="tableAnimalName1"></th>
+            <th id="tableOperation1"></th>
+            <th id="tableProfiles1"></th>
+            <th id="tableMessage1"></th>
+          </thead>
+          <tbody id="todayAppointmentsBody"></tbody>
+        </table>
+      </div>
+      <hr>
+      <h1 id="tomorrowsAppointmentHeader"></h1>
+        <div class="appointments">
+          <table>
+            <thead>
+              <th id="tableState2"></th>
+              <th id="tableTime2"></th>
+              <th id="tableOwnerName2"></th>
+              <th id="tableAnimalName2"></th>
+              <th id="tableOperation2"></th>
+              <th id="tableProfiles2"></th>
+              <th id="tableMessage2"></th>
+            </thead>
+            <tbody id="tomorrowAppointmentsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

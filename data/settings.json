@@ -1,0 +1,6 @@
+{
+  "company_name": "ABC Animal Hospital",
+  "wp_template_tr": "Sayın ${owner}; ${date} ${time} tarihinde, evcil hayvanınız ${animal} için ${treatment} işlemi randevunuz vardır.\n${company}, sağlıklı günler.",
+  "wp_template_en": "Dear ${owner}; At the date, ${date} ${time}; you have an ${treatment} appointment for your animal, ${animal}. fyi.\n${company}, Have a good day.",
+  "language": "en"
+}

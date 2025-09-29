@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="../styles/search.css" />
+  </head>
+  <body>
+    <button id="back" onclick="goBack()"></button>
+    <h2 id="header"></h2>
+    <div class="inputs">
+      <input id="tc" />
+      <input id="owner-name" />
+      <input id="phone" />
+      <input id="animal-name" />
+      <input id="chip" />
+      <button
+        id="searchBy"
+        style="width: 5rem; height: 3rem; margin-left: auto"
+        onclick="changeSearchBy()"
+      ></button>
+    </div>
+    <div class="search">
+      <table class="search-table">
+        <thead id="search-head"></thead>
+        <tbody id="search-results"></tbody>
+      </table>
+    </div>
+    <div id="delete-approval">
+      <div id="delete-approval-box">
+        <span
+          id="delete-message"
+          style="font-family: Verdana, sans-serif"
+        ></span>
+        <div>
+          <button id="delete-approve" onclick="acceptDeletion()"></button>
+          <button id="delete-reject" onclick="rejectDeletion()"></button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

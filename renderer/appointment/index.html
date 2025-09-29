@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="../styles/detail.css" />
+  </head>
+  <body>
+    <button onclick="goBack()" id="backBtn"></button>
+    <h2 id="header"></h2>
+    <div id="loader" style="display: none">Loading...</div>
+    <div class="details">
+      <div class="form">
+        <custom-dropdown id="ownerInput" placeholder="Sahip"></custom-dropdown>
+        <custom-dropdown
+          id="animalInput"
+          placeholder="Hayvan"
+        ></custom-dropdown>
+        <input id="dateInput" type="date" />
+        <input id="timeInput" type="time" placeholder="Zaman" />
+        <custom-dropdown id="reason" placeholder="İşlem"></custom-dropdown>
+      </div>
+      <!-- <textarea id="notes" placeholder="Notlar"></textarea> -->
+    </div>
+    <div class="buttons">
+      <button onclick="saveAppointment()" id="saveBtn"></button>
+    </div>
+    <div
+      id="messageBox"
+      style="
+        display: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+      "
+    ></div>
+    <script src="index.js"></script>
+    <script type="module" src="renderer.js"></script>
+  </body>
+</html>

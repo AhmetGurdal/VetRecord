@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="../styles/note.css" />
+  </head>
+  <body>
+    <button onclick="goBack()" id="backBtn"></button>
+    <h2 id="header"></h2>
+    <div id="loader" style="display: none">Loading...</div>
+    <div class="details" id="details">
+      <div class="form">
+        <textarea id="note" spellcheck="false"></textarea>
+        <div
+          id="messageBox"
+          style="
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+          "
+        ></div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="save-btn" onclick="saveNote()" id="saveBtn"></button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

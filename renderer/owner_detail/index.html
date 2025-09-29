@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="../styles/detail.css" />
+  </head>
+  <body>
+    <button onclick="goBack()" id="backBtn"></button>
+    <h2 id="header"></h2>
+    <div id="loader" style="display: none">Loading...</div>
+    <div class="details" id="details">
+      <div class="form">
+        <input id="tc" />
+        <input id="firstname" />
+        <input id="lastname" />
+        <input id="phone" />
+        <input id="email" placeholder="Email" />
+        <textarea
+          id="contacts"
+          style="
+            width: 18.9rem;
+            border-radius: 4px;
+            padding: 0.5rem;
+            height: 7rem;
+          "
+        ></textarea>
+      </div>
+      <div class="debt">
+        <div id="debtValue"></div>
+        <input id="debtInput" />
+        <div style="margin-top: 1rem">
+          <button style="background: rgb(87, 230, 68)" onclick="increaseDebt()">
+            +
+          </button>
+          <button style="background: rgb(248, 60, 60)" onclick="decreaseDebt()">
+            -
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="messageBox"
+      style="
+        display: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+      "
+    ></div>
+    <div class="buttons">
+      <button class="save-btn" onclick="save()" id="saveBtn"></button>
+    </div>
+    <!-- <script type="module" src="renderer.js"></script> -->
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="../styles/insert.css" />
+  </head>
+  <body>
+    <button onclick="goBack()" id="backBtn"></button>
+    <h2 id="header"></h2>
+    <div id="loader" style="display: none">Loading...</div>
+    <div class="form">
+      <custom-dropdown id="owners"></custom-dropdown>
+      <input id="name" />
+      <input id="birthday" type="date" />
+      <custom-dropdown id="sex"></custom-dropdown>
+      <custom-dropdown id="type"></custom-dropdown>
+      <custom-dropdown id="breed"></custom-dropdown>
+      <input id="chip" />
+      <button class="save-btn" onclick="save()" id="saveBtn">Kaydet</button>
+    </div>
+    <div
+      id="messageBox"
+      style="
+        display: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+      "
+    ></div>
+    <script type="module" src="renderer.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

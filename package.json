@@ -1,0 +1,21 @@
+{
+  "name": "todo-calendar-electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron dev.js",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.kayit",
+    "productName": "Record",
+    "win": {
+      "target": "portable"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^26.0.12",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}

@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  background: #ddd;
+}
+
+.sidebar {
+  width: 11rem;
+  height: calc(100vh - 20px);
+  background: #5e5e5e;
+  padding: 10px;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid black;
+  text-align: start;
+  padding-left: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sidebar button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ddd;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+}
+
+#actionButton {
+  width: 47%;
+  height: 2rem;
+}
+
+.appointments {
+  height: 16.5rem;
+  overflow-y: auto;
+  max-height: calc(50vh - 5rem);
+}
+
+th {
+  border: 1px solid #333;
+  padding: 8px;
+  position: sticky;
+  top: -1px;
+  background: #5e5e5e;
+  color: white;
+  font-family: Verdana, sans-serif;
+}
+
+tr:nth-child(even) {
+  background: #e6e5e5;
+}
+
+#logo {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0rem;
+  width: 12rem;
+  height: 12rem;
+}
