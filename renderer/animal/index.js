@@ -80,16 +80,24 @@ document.addEventListener("DOMContentLoaded", async () => {
         selectedType = e.detail;
         switch (selectedType) {
           case "Kedi":
-            breedDropdown.options = await readFile(catBreedPath);
+            breedDropdown.options = await readFile(
+              `${catBreedPath}_${settings.language}.json`
+            );
             break;
           case "Köpek":
-            breedDropdown.options = await readFile(dogBreedPath);
+            breedDropdown.options = await readFile(
+              `${dogBreedPath}_${settings.language}.json`
+            );
             break;
           case "Kanatlı":
-            breedDropdown.options = await readFile(birdBreedPath);
+            breedDropdown.options = await readFile(
+              `${birdBreedPath}_${settings.language}.json`
+            );
             break;
           case "Balık":
-            breedDropdown.options = await readFile(fishBreedPath);
+            breedDropdown.options = await readFile(
+              `${fishBreedPath}_${settings.language}.json`
+            );
             break;
           default:
             breedDropdown.options = [];

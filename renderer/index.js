@@ -118,7 +118,7 @@ function fillTable(body, appointments, animals, owners) {
           ? "red"
           : "#2ad42a"
         : "white"
-    }; width:2rem; height:2rem;" onclick=changeCheck(${id})></button>
+    }; width:2rem; height:2rem;" onclick=changeCheck('${id}')></button>
         </td>
         <td style="border: 1px solid #333; padding: 8px; text-align:center;">${
           appointments[id]?.time ? appointments[id]?.time : ""
@@ -157,7 +157,7 @@ function fillTable(body, appointments, animals, owners) {
           owners[appointments[id].ownerId]?.phone.length > 2
             ? ""
             : "disabled"
-        } onclick="openWhatsapp(${id})">💬</button>
+        } onclick="openWhatsapp('${id}')">💬</button>
         </div>
         </td
       `;
@@ -186,7 +186,6 @@ function filterAnimals(data, ownerData) {
 }
 
 async function loadTodos() {
-  console.log("ELEKTRON_API", await window.electronAPI.getLang());
   settings = await readFile(settingsPath);
   if (settings.language) {
     lang = await readFile(`./static/languages/${settings.language}.json`);

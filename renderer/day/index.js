@@ -105,7 +105,7 @@ function fillTable(appointments, animals, owners) {
           ? "red"
           : "#2ad42a"
         : "white"
-    }; width:3rem; height:3rem;" onclick=changeCheck(${id})></button>
+    }; width:3rem; height:3rem;" onclick=changeCheck('${id}')></button>
     </td>    
     <td style="border: 1px solid #333; padding: 8px;">${
       appointments[id]?.time ? appointments[id]?.time : ""

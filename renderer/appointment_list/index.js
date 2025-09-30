@@ -123,7 +123,7 @@ async function fill_table(appointments) {
           ? "red"
           : "#2ad42a"
         : "white"
-    }; width:2rem; height:2rem;" onclick=changeCheck(${id})></button>
+    }; width:2rem; height:2rem;" onclick=changeCheck('${id}')></button>
         </td>
         <td style="border: 1px solid #333; padding: 8px;">${
           appointments[id].date
